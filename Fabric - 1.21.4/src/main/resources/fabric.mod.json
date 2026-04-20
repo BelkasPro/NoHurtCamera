@@ -1,0 +1,27 @@
+{
+	"schemaVersion": 1,
+	"id": "nohurtcam",
+	"version": "${version}",
+	"name": "NoHurtCam",
+	"description": "Removes the damage screenshake. A fork of the original mod by UltraBlackLinux.",
+	"authors": [
+		"Belka [Fork Author]",
+		"UltraBlackLinux [Original Author]"
+	],
+	"license": "AGPL-3.0",
+	"icon": "assets/nohurtcam/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.nhc.client.NoHurtCamClient"
+		]
+	},
+	"mixins": [
+		"nohurtcam.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "1.21.4",
+		"fabric-api": "*"
+	}
+}
